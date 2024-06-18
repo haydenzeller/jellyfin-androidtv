@@ -42,6 +42,10 @@ class ClockUserView @JvmOverloads constructor(
 
 		val currentUser = userRepository.currentUser.value
 
+		binding.search.setOnClickListener {
+			navigationRepository.navigate(Destinations.search())
+		}
+
 		binding.clockUserImage.load(
 			url = currentUser?.let(imageHelper::getPrimaryImageUrl),
 			placeholder = ContextCompat.getDrawable(context, R.drawable.ic_user)

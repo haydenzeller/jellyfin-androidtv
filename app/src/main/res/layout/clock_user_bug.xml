@@ -10,6 +10,14 @@
     android:orientation="horizontal">
 
     <ImageButton
+        android:id="@+id/search"
+        style="@style/Button.Icon"
+        android:layout_width="41dp"
+        android:layout_height="41dp"
+        android:contentDescription="@string/lbl_search"
+        android:src="@drawable/ic_search" />
+
+    <ImageButton
         android:id="@+id/home"
         style="@style/Button.Icon"
         android:layout_width="41dp"
